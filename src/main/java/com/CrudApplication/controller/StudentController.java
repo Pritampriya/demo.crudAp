@@ -46,7 +46,7 @@ public class StudentController {
 
         Optional<Student> stud = studentRepository.findById(Id);
         if (stud.isPresent()) {
-            student.setId(stud.get().getId());
+            student.setId(stud.get().getClass());
             studentRepository.save(student);
             return ResponseEntity.status(HttpStatus.OK).body("Student Record updated successful" + Id);
 

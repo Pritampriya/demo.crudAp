@@ -19,6 +19,10 @@ public class Student {
     private String email;
     private String city;
     private String age;
+	public void setId(Class<? extends Student> class1) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 
 
